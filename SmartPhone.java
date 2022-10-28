@@ -10,7 +10,7 @@ abstract class Phone{
    abstract public void makeCall();
    abstract public void receiveCall();
     public void info(){
-        System.out.println("Hello");
+        System.out.println("Hello phone is working");
     }
 }
 interface check{
@@ -18,7 +18,9 @@ interface check{
 }
 
 interface Camera{
-    public void camera();
+     default void camera(){
+        System.out.println("in camera");
+    }
 }
 
 interface Player{
@@ -63,7 +65,7 @@ class Mysmartphone extends  Phone implements Camera,Player,Wifi,check {
 
 @Override
    public void info(){
-       System.out.println("Hiiii");
+       System.out.println("Hiiii smartphone is working");
    }
    public void checking(){
        System.out.println("Congratulation...\nSmart phone is working");
@@ -86,6 +88,11 @@ public class SmartPhone {
             sp.workingphone();
             Player p = new Mysmartphone();
             p.play("Lag ja gale....");
+            //p.camera();
+            Camera c = new Mysmartphone();
+            c.camera();
+            Phone ph=new Mysmartphone();
+            ph.info();
         }
 
 

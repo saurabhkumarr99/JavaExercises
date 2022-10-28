@@ -19,8 +19,10 @@ public class stringoperations {
         System.out.println(u);
         System.out.println(l);
         System.out.println(s);
+        //System.out.println(name.reverse());
         String nam[]=name.split(" ");
-
+        String user=nam[0].substring(0,1)+"123"+nam[0].substring(1,3);
+        System.out.println(user);
         System.out.println(Arrays.toString(nam));
         Arrays.sort(nam);
         System.out.println(Arrays.toString(nam));

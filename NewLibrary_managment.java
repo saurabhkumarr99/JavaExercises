@@ -24,6 +24,7 @@ class NewLibrary{
         int k;
         if (books.contains(b)) {
              k =books.indexOf(b);
+           // System.out.println(books.get(k));
             return k;
         }
         else{
